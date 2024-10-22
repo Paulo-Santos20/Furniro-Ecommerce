@@ -18,8 +18,13 @@ async function main() {
       description: 'Stylish cafe chair',
       price: 2500000,
       originalPrice: 3500000,
-      image: 'syltherineImage',
-      images: ['syltherineImage2', 'syltherineImage3', 'syltherineImage4'],
+      image:
+        'https://img.freepik.com/fotos-gratis/investigador-privado-a-procurar-arquivos-com-base-em-nomes-de-casos-nos-arquivos_482257-83351.jpg?t=st=1729620396~exp=1729623996~hmac=c79910888b04b6cce688f8e76e39b56fd04a4aba33c6ddce7622438ce24f4628&w=1060',
+      images: [
+        'https://img.freepik.com/fotos-gratis/investigador-privado-a-procurar-arquivos-com-base-em-nomes-de-casos-nos-arquivos_482257-83351.jpg?t=st=1729620396~exp=1729623996~hmac=c79910888b04b6cce688f8e76e39b56fd04a4aba33c6ddce7622438ce24f4628&w=1060',
+        'https://img.freepik.com/fotos-gratis/investigador-privado-a-procurar-arquivos-com-base-em-nomes-de-casos-nos-arquivos_482257-83351.jpg?t=st=1729620396~exp=1729623996~hmac=c79910888b04b6cce688f8e76e39b56fd04a4aba33c6ddce7622438ce24f4628&w=1060',
+        'https://img.freepik.com/fotos-gratis/investigador-privado-a-procurar-arquivos-com-base-em-nomes-de-casos-nos-arquivos_482257-83351.jpg?t=st=1729620396~exp=1729623996~hmac=c79910888b04b6cce688f8e76e39b56fd04a4aba33c6ddce7622438ce24f4628&w=1060',
+      ],
       discount: '-30%',
       rating: 4.5,
       reviewCount: 5,

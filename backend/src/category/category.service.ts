@@ -25,7 +25,7 @@ export class CategoryService {
       where: { id },
     });
     if (!category) {
-      throw new NotFoundException(`Category with ID ${id} not found`);
+      throw new NotFoundException(`Categoria com o ${id} não encontrado`);
     }
     return category;
   }
@@ -35,7 +35,7 @@ export class CategoryService {
       where: { id },
     });
     if (!categoryToDelete) {
-      throw new NotFoundException(`Category with ID ${id} not found`);
+      throw new NotFoundException(`Categoria com o ${id} não encontrado`);
     }
     return this.prisma.category.delete({
       where: { id },

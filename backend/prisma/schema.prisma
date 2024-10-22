@@ -10,7 +10,7 @@ datasource db {
 model Category {
   id           Int       @id @default(autoincrement())
   name         String    @unique @db.VarChar(50)
-  image_link   String?   @db.VarChar(250) // Certifique-se de que está presente
+  image_link   String?   @db.VarChar(250) 
   created_date DateTime? @default(now()) @db.Timestamp(6)
   updated_date DateTime? @default(now()) @db.Timestamp(6)
   products     Product[]

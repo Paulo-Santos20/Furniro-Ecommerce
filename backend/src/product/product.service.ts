@@ -35,7 +35,6 @@ export class ProductService {
       where: { id },
       data: {
         ...productData,
-        // Removendo updated_date, pois é gerido automaticamente
       },
     });
   }

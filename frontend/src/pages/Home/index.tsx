@@ -7,7 +7,7 @@ const Home: React.FC = () => {
   return (
     <div>
       <BannerItem
-        imgUrl="/assets/images/scandinavian.png"
+        imgUrl="/assets/images/heroBanner.png"
         rectangleSrc="/assets/images/rectangle.png"
         p=" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
           tellus, luctus nec ullamcorper mattis."

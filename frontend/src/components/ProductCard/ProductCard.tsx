@@ -1,10 +1,26 @@
-const Product: React.FC<IProps> = (props) => {
-  const { product, onSeeDetails } = props;
+// ProductCard.tsx
+import React from 'react';
 
+interface ProductProps {
+  product: {
+    id: number;
+    name: string;
+    description: string;
+    price: string;
+    discount_price?: string;
+    discount_percent?: string;
+    image_link: string;
+    image: string;
+    is_new?: boolean;
+  };
+  onSeeDetails: (productId: number) => void;
+}
+
+const ProductCard: React.FC<ProductProps> = ({ product, onSeeDetails }) => {
   return (
-    <div className="product-card" key={product.id}>
+    <div className="product-card">
       <div className="product-image">
-        <img src={product.image_link} alt={product.name} />
+        <img src={product.image} alt={product.name} />
         {product.discount_percent && (
           <span className="discount_percent">-{product.discount_percent}%</span>
         )}
@@ -50,7 +66,7 @@ const Product: React.FC<IProps> = (props) => {
         <p className="price">
           R$
           <span className="price-value-discount">
-            {parseFloat(product.price).toLocaleString("pt-BR")}
+            {parseFloat(product.price).toLocaleString("pt-BR", { minimumFractionDigits: 2 })}
           </span>
         </p>
 
@@ -58,7 +74,7 @@ const Product: React.FC<IProps> = (props) => {
           <p className="original-price">
             R$
             <span className="price-value">
-              {parseFloat(product.discount_price).toLocaleString("pt-BR")}
+              {parseFloat(product.discount_price).toLocaleString("pt-BR", { minimumFractionDigits: 2 })}
             </span>
           </p>
         )}
@@ -67,20 +83,4 @@ const Product: React.FC<IProps> = (props) => {
   );
 };
 
-interface Product {
-  id: number;
-  name: string;
-  description: string;
-  price: string;
-  discount_price?: string;
-  discount_percent?: string;
-  image_link: string;
-  is_new?: boolean;
-}
-
-interface IProps {
-  product: Product;
-  onSeeDetails: (productId: number) => void;
-}
-
-export default Product;
+export default ProductCard;

@@ -15,17 +15,17 @@ const Browse: React.FC = () => {
       <h1 className="browser-title">Browse The Range</h1>
       <div className="browser-container">
         <BrowseItem
-          imageUrl="/assets/images/Mask-table.png"
+          imageUrl="./assets/images/bannerDining.png"
           title="Dining"
           link="#"
         />
         <BrowseItem
-          imageUrl="/assets/images/Image-room.png"
+          imageUrl="/assets/images/bannerLiving.png"
           title="Living"
           link="#"
         />
         <BrowseItem
-          imageUrl="/assets/images/Mask-plant.png"
+          imageUrl="/assets/images/bannerRoom.png"
           title="Bedroom"
           link="#"
         />
