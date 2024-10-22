@@ -4,7 +4,7 @@ import "./Footer.css";
 const Footer: React.FC = () => {
   return (
     <footer>
-      <div className="content-1240">
+      <div className="content-details">
         <nav className="footer-li">
           <div>
             <h3>Furniro.</h3>

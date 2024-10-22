@@ -49,13 +49,13 @@ h4 {
 }
 
 .content {
-  width: 1440px;
+  width: 100%;
   margin: auto;
 }
 
-.content-1240 {
-  width: 1240px;
-  margin: auto;
+.content-details {
+  width: 100%;
+  margin: 0 100px;
 }
 
 @font-face {
