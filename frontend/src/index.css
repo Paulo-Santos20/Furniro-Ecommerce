@@ -1,5 +1,5 @@
 :root {
-  --font-family: 'Poppins', sans-serif;
+  --font-family: "Poppins", sans-serif;
   --font-weight-400: 400;
   --font-weight-500: 500;
   --font-weight-600: 600;
@@ -7,6 +7,49 @@
   --line-height: 1.5;
 }
 
+@font-face {
+  font-family: "Poppins";
+  src: url("/assets/fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/assets/fonts/Poppins/Poppins-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/assets/fonts/Poppins/Poppins-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/assets/fonts/Poppins/Poppins-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/assets/fonts/Montserrat/static/Montserrat-Regular.ttf")
+    format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/assets/fonts/Montserrat/static/Montserrat-Bold.ttf")
+    format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
 body {
   font-family: var(--font-family);
   line-height: var(--line-height);
@@ -18,7 +61,7 @@ h1 {
 }
 
 h2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: var(--font-weight-700);
   font-size: 34px;
 }
@@ -54,48 +97,5 @@ h4 {
 }
 
 .content-details {
-  width: 100%;
   margin: 0 100px;
-}
-
-@font-face {
-  font-family: 'Poppins';
-  src: url('/assets/fonts/Poppins/Poppins-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Poppins';
-  src: url('/assets/fonts/Poppins/Poppins-Medium.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Poppins';
-  src: url('/assets/fonts/Poppins/Poppins-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Poppins';
-  src: url('/assets/fonts/Poppins/Poppins-Light.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Montserrat';
-  src: url('/assets/fonts/Montserrat/static/Montserrat-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Montserrat';
-  src: url('/assets/fonts/Montserrat/static/Montserrat-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
 }

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./BannerItem.css";
+
 const BannerItem: React.FC<IPropsBanner> = ({
   imgUrl,
   p,
@@ -10,25 +11,25 @@ const BannerItem: React.FC<IPropsBanner> = ({
   type,
   icon,
 }) => {
-  const className = type === "tipo1" ? "type1" : "type2";
+  const blockType = type === "tipo1" ? "banner--type1" : "banner--type2";
   return (
-    <section className={`container ${className}`}>
-      <div className="content">
-        <img src={imgUrl} alt={title} className="background-image-home" />
+    <section className={`banner ${blockType}`}>
+      <div className="banner__content">
+        <img src={imgUrl} alt={title} className="banner__background-image" />
 
         {type === "tipo1" && (
-          <img className="Rectangle" src={rectangleSrc} alt={title} />
+          <img className="banner__rectangle" src={rectangleSrc} alt={title} />
         )}
-        <p className="overlay-text">{p}</p>
-        {title && <h1 className="banner-title">{title}</h1>}
+        <p className="banner__overlay-text">{p}</p>
+        {title && <h1 className="banner__title">{title}</h1>}
         {linkHome && (
-          <Link to={linkHome} className="banner-link-home">
+          <Link to={linkHome} className="banner__link banner__link--home">
             Home
           </Link>
         )}
-        <img src={icon} alt={title} className="banner-icon" />
+        <img src={icon} alt={title} className="banner__icon" />
         {linkShop && (
-          <Link to={linkShop} className="banner-link-shop">
+          <Link to={linkShop} className="banner__link banner__link--shop">
             Shop
           </Link>
         )}

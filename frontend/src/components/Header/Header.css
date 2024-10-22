@@ -1,42 +1,49 @@
-header {
+.header {
     position: fixed;
     background-color: #FFFFFF;
     width: 100%;
     z-index: 1000;
 }
 
-.Logo {
+.header__logo {
     display: flex;
     gap: 3px;
+    align-items: center;
 }
 
-.header-container {
+.header__logo-image {
+    height: 41px;
+}
+
+.header__container {
     display: flex;
     justify-content: space-around;
     align-items: center;
     min-height: 100px;
 }
 
-.list {
+.header__nav-list {
     display: flex;
     gap: 60px;
 }
 
-.item a {
+.header__nav-item a {
     font-size: 1rem;
+    text-decoration: none;
+    color: inherit;
 }
 
-.header-icons {
+.header__icon-list {
     display: flex;
+    gap: 20px;
 }
 
-.header-icons img {
+.header__icon-item {
+    list-style: none;
+}
+
+.header__icon {
     width: 24px;
     height: 24px;
     cursor: pointer;
-}
-
-.header-logo {
-    height: 41px;
-
 }

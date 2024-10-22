@@ -20,7 +20,6 @@ const ProductsList: React.FC<IProps> = ({ title, limit = 8 }) => {
 
   const handleSeeDetails = (productId: number) => {
     console.log("Viewing details for product:", productId);
-    
   };
 
   const handleShowMore = () => {
@@ -28,10 +27,10 @@ const ProductsList: React.FC<IProps> = ({ title, limit = 8 }) => {
   };
 
   return (
-    <section>
-      <div className="product-content">
-        <h1 className="product-title-main">{title}</h1>
-        <div className="product-flex">
+    <section className="product-list">
+      <div className="product-list__content">
+        <h1 className="product-list__title">{title}</h1>
+        <div className="product-list__grid">
           {products.slice(0, limit).map((product) => (
             <Product
               key={product.id}
@@ -41,7 +40,7 @@ const ProductsList: React.FC<IProps> = ({ title, limit = 8 }) => {
           ))}
         </div>
         <Link to={"/shop"}>
-          <button className="show-more" onClick={handleShowMore}>
+          <button className="product-list__show-more" onClick={handleShowMore}>
             Show More
           </button>
         </Link>
@@ -49,6 +48,7 @@ const ProductsList: React.FC<IProps> = ({ title, limit = 8 }) => {
     </section>
   );
 };
+
 export interface IProps {
   title?: string;
   limit?: number;
