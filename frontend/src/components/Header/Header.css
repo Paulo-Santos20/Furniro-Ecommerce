@@ -1,0 +1,42 @@
+header {
+    position: fixed;
+    background-color: #FFFFFF;
+    width: 100%;
+    z-index: 1000;
+}
+
+.Logo {
+    display: flex;
+    gap: 3px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100px;
+}
+
+.list {
+    display: flex;
+    gap: 60px;
+}
+
+.item a {
+    font-size: 1rem;
+}
+
+.header-icons {
+    display: flex;
+}
+
+.header-icons img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.header-logo {
+    height: 41px;
+
+}

@@ -1,0 +1,35 @@
+.support-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #FAF3EA;
+    max-width: 1440px;
+    min-height: 270px;
+    margin: auto;
+}
+
+.support-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.icon {
+    min-width: 60px;
+}
+
+.support-container-itens {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.8;
+}
+
+h4,
+.support-title {
+    font-size: 25px;
+}
+
+.supporte-p {
+    color: #898989;
+}
