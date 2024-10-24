@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     background-color: #FAF3EA;
-    max-width: 1440px;
+    width: 100%;
     min-height: 270px;
     margin: auto;
 }
