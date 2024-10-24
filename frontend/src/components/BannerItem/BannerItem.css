@@ -16,8 +16,13 @@
     bottom: 1%;
     left: 52%;
     border-radius: 10px 10px 0 0;
+<<<<<<< HEAD
     height: 50%;
     width: 45%;
+=======
+    height: 292px;
+    width:40%;
+>>>>>>> main
   }
   
   .banner__overlay-text {
