@@ -20,7 +20,7 @@ const ProductCard: React.FC<ProductProps> = ({ product, onSeeDetails }) => {
   return (
     <div className="product-card">
       <div className="product-image">
-        <img src={product.image} alt={product.name} />
+        <img src={product.image_link || product.image} alt={product.name} />
         {product.discount_percent && (
           <span className="discount_percent">-{product.discount_percent}%</span>
         )}
@@ -66,7 +66,9 @@ const ProductCard: React.FC<ProductProps> = ({ product, onSeeDetails }) => {
         <p className="price">
           R$
           <span className="price-value-discount">
-            {parseFloat(product.price).toLocaleString("pt-BR", { minimumFractionDigits: 2 })}
+            {parseFloat(product.price).toLocaleString("pt-BR", { 
+              minimumFractionDigits: 2 
+            })}
           </span>
         </p>
 
@@ -74,7 +76,9 @@ const ProductCard: React.FC<ProductProps> = ({ product, onSeeDetails }) => {
           <p className="original-price">
             R$
             <span className="price-value">
-              {parseFloat(product.discount_price).toLocaleString("pt-BR", { minimumFractionDigits: 2 })}
+              {parseFloat(product.discount_price).toLocaleString("pt-BR", { 
+                minimumFractionDigits: 2 
+              })}
             </span>
           </p>
         )}
