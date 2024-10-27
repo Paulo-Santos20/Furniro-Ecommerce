@@ -19,7 +19,7 @@ const App: React.FC = () => {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/product/:id" element={<SingleProductPage />} />
-        </Routes>
+          </Routes>
         <Footer />
       </Router>
     </CartProvider>

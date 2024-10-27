@@ -5,7 +5,10 @@ import axios from "axios";
 import "./SingleProductPage.css";
 import separator from "../../assets/icons/separator.svg";
 import separatorHorizontal from "../../assets/icons/separator-horizontal.svg";
-import { useCart } from "../../hooks/CartContext"; 
+import { useCart } from "../../hooks/CartContext";
+import facebookImg from "../../assets/icons/facebook.svg";
+import linkedinImg from "../../assets/icons/linkedin.svg";
+import twitterImg from "../../assets/icons/twitter.svg";
 
 interface Product {
   id: number;
@@ -39,6 +42,7 @@ const SingleProductPage = () => {
   const [selectedColor, setSelectedColor] = useState<string>("");
   const [activeTab, setActiveTab] = useState("description");
   const [relatedProducts, setRelatedProducts] = useState<Product[]>([]);
+  const [showFullDescription, setShowFullDescription] = useState(false);
 
   useEffect(() => {
     const fetchProduct = async () => {
@@ -111,19 +115,19 @@ const SingleProductPage = () => {
       alert("Please select size and color");
       return;
     }
-  
+
     if (!product) return;
-  
+
     addToCart({
       id: product.id,
       name: product.name,
       price: product.price,
-      image: product.image_link || product.image || '',
+      image: product.image_link || product.image || "",
       quantity: quantity,
       size: selectedSize,
-      color: selectedColor
+      color: selectedColor,
     });
-  
+
     console.log("Added to cart:", {
       product,
       quantity,
@@ -281,7 +285,7 @@ const SingleProductPage = () => {
                   className="product-page__compare"
                   onClick={handleAddToCart}
                 >
-                 + Compare
+                  + Compare
                 </button>
               </div>
             </div>
@@ -300,6 +304,30 @@ const SingleProductPage = () => {
                 <span>
                   : {product.tags?.join(", ") || "Sofa, Chair, Home, Shop"}
                 </span>
+              </div>
+              <div className="product-page__meta-item">
+                <span>Share</span>
+                <span>: </span>
+                <div className="product-page__social-links">
+                  <button
+                    onClick={() => handleShare("facebook")}
+                    className="product-page__social-link"
+                  >
+                    <img src={facebookImg} alt="Share on Facebook" />
+                  </button>
+                  <button
+                    onClick={() => handleShare("twitter")}
+                    className="product-page__social-link"
+                  >
+                    <img src={twitterImg} alt="Share on Twitter" />
+                  </button>
+                  <button
+                    onClick={() => handleShare("linkedin")}
+                    className="product-page__social-link"
+                  >
+                    <img src={linkedinImg} alt="Share on LinkedIn" />
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -336,8 +364,26 @@ const SingleProductPage = () => {
           <div className="product-page__tab-content">
             {activeTab === "description" && (
               <div className="product-page__description-content">
-                <p>{product.description}</p>
-                {product.additionalInfo && <p>{product.additionalInfo}</p>}
+                <p>
+                  {showFullDescription
+                    ? product.description
+                    : `${product.description.slice(0, 250)}...`}
+                </p>
+                {product.description.length > 250 && (
+                  <button
+                    className={`product-page__show-more ${
+                      showFullDescription ? "expanded" : ""
+                    }`}
+                    onClick={() => setShowFullDescription(!showFullDescription)}
+                  >
+                    {showFullDescription ? "Show Less" : "Show More"}
+                  </button>
+                )}
+                {showFullDescription && product.additionalInfo && (
+                  <p className="product-page__additional-info">
+                    {product.additionalInfo}
+                  </p>
+                )}
               </div>
             )}
             {activeTab === "additional" && (
@@ -395,6 +441,14 @@ const SingleProductPage = () => {
             ) : (
               <p>No related products found</p>
             )}
+          </div>
+          <div className="product-page__show-more-container">
+            <button
+              className="product-page__show-more-button"
+              onClick={() => navigate("/shop")}
+            >
+              Show More
+            </button>
           </div>
         </div>
       </div>
