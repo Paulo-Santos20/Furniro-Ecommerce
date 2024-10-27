@@ -5,6 +5,7 @@ import axios from "axios";
 import "./SingleProductPage.css";
 import separator from "../../assets/icons/separator.svg";
 import separatorHorizontal from "../../assets/icons/separator-horizontal.svg";
+import { useCart } from "../../hooks/CartContext"; 
 
 interface Product {
   id: number;
@@ -26,6 +27,7 @@ interface Product {
 }
 
 const SingleProductPage = () => {
+  const { addToCart } = useCart();
   const { id } = useParams();
   const navigate = useNavigate();
   const [product, setProduct] = useState<Product | null>(null);
@@ -109,7 +111,19 @@ const SingleProductPage = () => {
       alert("Please select size and color");
       return;
     }
-
+  
+    if (!product) return;
+  
+    addToCart({
+      id: product.id,
+      name: product.name,
+      price: product.price,
+      image: product.image_link || product.image || '',
+      quantity: quantity,
+      size: selectedSize,
+      color: selectedColor
+    });
+  
     console.log("Added to cart:", {
       product,
       quantity,
