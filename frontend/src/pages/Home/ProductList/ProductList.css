@@ -14,7 +14,7 @@
 
 .product-list__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 285px);
+  grid-template-columns: repeat(auto-fill, 275px);
   gap: 32px;
   justify-content: center;
   margin-bottom: 32px;
@@ -68,6 +68,7 @@
   object-fit: cover;
   object-position: center;
 }
+<<<<<<< HEAD
 
 .discount_percent,
 .new {
@@ -86,6 +87,31 @@
 .discount_percent {
   background-color: #e97171;
   color: #ffffff;
+=======
+.new,
+.discount_percent {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 500;
+  z-index: 2;
+}
+.new {
+  background: #2EC1AC;
+  color: #FFFFFF;
+}
+
+.discount_percent {
+  background: #E97171;
+  color: #FFFFFF;
+>>>>>>> 836d2c28573ce8009862d4a2e0fd0f359c2675bb
 }
 
 .new {

@@ -24,6 +24,7 @@ const Shop: React.FC = () => {
   const handleSeeDetails = (productId: number) => {
     console.log("Viewing details for product:", productId);
   };
+
   const handlePagination = () => {
     console.log("Clicou");
   };
@@ -44,9 +45,9 @@ const Shop: React.FC = () => {
           <img src="assets/icons/filtering.svg" alt="Filter Icon" />
           Filter
         </button>
-        <img src="assets/icons/grid-big-round.svg" alt=" Grid Icon" />
+        <img src="assets/icons/grid-big-round.svg" alt="Grid Icon" />
         <img src="assets/icons/view-list.svg" alt="View list Icon" />
-        <img src="assets/icons/line.svg" alt=" Icon Bar" />
+        <img src="assets/icons/line.svg" alt="Icon Bar" />
         <div className="pagination-info">Showing 1–16 of 32 results</div>
         <div className="controls">
           <label htmlFor="Show">Show</label>
@@ -62,8 +63,8 @@ const Shop: React.FC = () => {
         </div>
       </div>
 
-      <div className="product-content">
-        <div className="product-flex">
+      <div className="product-list">
+        <div className="product-list__grid">
           {products.slice(0, productsPerPage).map((product) => (
             <Product
               key={product.id}

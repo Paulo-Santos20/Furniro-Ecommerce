@@ -19,12 +19,12 @@ async function main() {
       price: 2500000,
       originalPrice: 3500000,
       image:
-        'https://img.freepik.com/fotos-gratis/investigador-privado-a-procurar-arquivos-com-base-em-nomes-de-casos-nos-arquivos_482257-83351.jpg?t=st=1729620396~exp=1729623996~hmac=c79910888b04b6cce688f8e76e39b56fd04a4aba33c6ddce7622438ce24f4628&w=1060',
+        'https://lh3.googleusercontent.com/pw/AP1GczOkpSAvzv700YGQd6LviOsE-hNE9USyA3ZlhgkgvuRM-QQ_mOnM92JXPo52ouNT9X5YeP_nPSX6LfJ80oYGN4Mc03Ba8dxPkLk8lma0HHHAmAYsl161EDQokcKH_cLuGdA4gW2wHKHqGCGKogzOvFU=w620-h928-s-no-gm?authuser=0',
       images: [
-        'https://img.freepik.com/fotos-gratis/investigador-privado-a-procurar-arquivos-com-base-em-nomes-de-casos-nos-arquivos_482257-83351.jpg?t=st=1729620396~exp=1729623996~hmac=c79910888b04b6cce688f8e76e39b56fd04a4aba33c6ddce7622438ce24f4628&w=1060',
-        'https://img.freepik.com/fotos-gratis/investigador-privado-a-procurar-arquivos-com-base-em-nomes-de-casos-nos-arquivos_482257-83351.jpg?t=st=1729620396~exp=1729623996~hmac=c79910888b04b6cce688f8e76e39b56fd04a4aba33c6ddce7622438ce24f4628&w=1060',
-        'https://img.freepik.com/fotos-gratis/investigador-privado-a-procurar-arquivos-com-base-em-nomes-de-casos-nos-arquivos_482257-83351.jpg?t=st=1729620396~exp=1729623996~hmac=c79910888b04b6cce688f8e76e39b56fd04a4aba33c6ddce7622438ce24f4628&w=1060',
+        'https://lh3.googleusercontent.com/pw/AP1GczOkpSAvzv700YGQd6LviOsE-hNE9USyA3ZlhgkgvuRM-QQ_mOnM92JXPo52ouNT9X5YeP_nPSX6LfJ80oYGN4Mc03Ba8dxPkLk8lma0HHHAmAYsl161EDQokcKH_cLuGdA4gW2wHKHqGCGKogzOvFU=w620-h928-s-no-gm?authuser=0',
+        'https://lh3.googleusercontent.com/pw/AP1GczMFofEUhmq_WdzQFGwrkLWCaqtQs0V8Dd7RjZ7rKYuBxC5wJg6HMDgN8ivN2TQ1HJMfdfz8LuALgScfLhjgiWX_UHqfjy00D5t7hWDMSdegOklJrf_0BAu0veERyMtALN8JrIsPJ_fimocNDFnkirs=w618-h928-s-no-gm?authuser=0'
       ],
+      is_new: false,
       discount: '-30%',
       is_new: false,
       rating: 4.5,
@@ -37,7 +37,11 @@ async function main() {
       name: 'Leviosa',
       description: 'Stylish cafe chair',
       price: 2500000,
+<<<<<<< HEAD
       image: 'leviosaImage',
+=======
+      image: 'https://lh3.googleusercontent.com/pw/AP1GczMFofEUhmq_WdzQFGwrkLWCaqtQs0V8Dd7RjZ7rKYuBxC5wJg6HMDgN8ivN2TQ1HJMfdfz8LuALgScfLhjgiWX_UHqfjy00D5t7hWDMSdegOklJrf_0BAu0veERyMtALN8JrIsPJ_fimocNDFnkirs=w618-h928-s-no-gm?authuser=0',
+>>>>>>> 836d2c28573ce8009862d4a2e0fd0f359c2675bb
       is_new: false,
       rating: 4.5,
       additionalInfo:
@@ -49,7 +53,8 @@ async function main() {
       description: 'Luxury big sofa',
       price: 7000000,
       originalPrice: 14000000,
-      image: 'lolitoImage',
+      image: 'https://lh3.googleusercontent.com/pw/AP1GczNFOxJ0pV3hXTpIKJg5KLagO4y4p22-V15707Cscwr_-w7F0tXkQIlNppWdCCawh1Nqz_hrXnSN8_Y18x4fNh3dVnmN8UUS8yQ3g9F27brMWIxwKJK_Ehlw8nHnBlIQE5uTA8BklAyjZmxsqCUZ-WQ=w1408-h928-s-no-gm?authuser=0',
+      is_new: false,
       discount: '-50%',
       is_new: false,
       rating: 4.5,
@@ -61,7 +66,11 @@ async function main() {
       name: 'Respira',
       description: 'Outdoor bar table and stool',
       price: 500000,
+<<<<<<< HEAD
       image: 'respiraImage',
+=======
+      image: 'https://lh3.googleusercontent.com/pw/AP1GczPFFnDzFGU6i5fu7UblrnaEigrSHDRi8riNzF3PUefIppnrvyGV3ydBNLotlhpAZe1zVWVy1UeV9nuiT84R7QunJAPcs2Osx9f4XE-hewByds3nXn74kIX8cDnpy9KO58HTTH8SeVCVEV0AS8ANxz_d=w1403-h928-s-no-gm?authuser=0',
+>>>>>>> 836d2c28573ce8009862d4a2e0fd0f359c2675bb
       is_new: true,
       rating: 4.5,
       additionalInfo:
@@ -72,7 +81,11 @@ async function main() {
       name: 'Grifo',
       description: 'Night lamp',
       price: 1500000,
+<<<<<<< HEAD
       image: 'grifoImage',
+=======
+      image: 'https://lh3.googleusercontent.com/pw/AP1GczPFFnDzFGU6i5fu7UblrnaEigrSHDRi8riNzF3PUefIppnrvyGV3ydBNLotlhpAZe1zVWVy1UeV9nuiT84R7QunJAPcs2Osx9f4XE-hewByds3nXn74kIX8cDnpy9KO58HTTH8SeVCVEV0AS8ANxz_d=w1403-h928-s-no-gm?authuser=0',
+>>>>>>> 836d2c28573ce8009862d4a2e0fd0f359c2675bb
       is_new: false,
       rating: 4.5,
       additionalInfo:
@@ -83,8 +96,13 @@ async function main() {
       name: 'Muggo',
       description: 'Small mug',
       price: 150000,
+<<<<<<< HEAD
       is_new: true,
       image: 'muggoImage',
+=======
+      image: 'https://lh3.googleusercontent.com/pw/AP1GczNCPS-DJUE2wmkKt_WCby6ErRquz_3Jy5MlErG3d10q4bH7v4X1rxQ_CXrCXoQ0XHuBb1L6PmBcnFzFnkjkwjUQCfGjGc3ovg0Hhy1I3fHkZLRabEN_ru4hfqLhgm60ys--qdI5LkbGuiIGnitTq-ic=w800-h534-s-no-gm?authuser=0',
+      is_new: true,
+>>>>>>> 836d2c28573ce8009862d4a2e0fd0f359c2675bb
       discount: 'New',
       rating: 4.5,
       additionalInfo:
@@ -96,7 +114,7 @@ async function main() {
       description: 'Cute bed set',
       price: 7000000,
       originalPrice: 14000000,
-      image: 'pingkyImage',
+      image: 'https://lh3.googleusercontent.com/pw/AP1GczMwuTBMQMQrZf7SM9jMLugJn_aXmpCOwPaindrKW7eCFhWhGA0OIwQ4xBjRFPGg9Prsfh1Bh4VCcclM6VTKeFmkvnnzGUW1MQElwOfSPtMlq6IPcfFWSa4cu0YQYcFBCIfQFvSP6NDsIH-bvz393xhQ=w1390-h928-s-no-gm?authuser=0',
       discount: '-50%',
       is_new: false,
       rating: 4.5,
@@ -108,8 +126,13 @@ async function main() {
       name: 'Potty',
       description: 'Minimalist flower pot',
       price: 500000,
+<<<<<<< HEAD
       is_new: true,
       image: 'pottyImage',
+=======
+      image: 'https://lh3.googleusercontent.com/pw/AP1GczMlP3ZWSVbwWIKOJ9ktka4RiT0XWrMYe3bw81wnPpbaLQKEvVwBsZv4T9tcK06vZxLSvrf7RC1aFqq4udxfhRvUtsRiRCWxJf2EyjX3FKZasAcBRzH3HQyVDqB5bIc0UAmkTL_OMh5zUZ9krkpF_w6M=w1237-h928-s-no-gm?authuser=0',
+      is_new: true,
+>>>>>>> 836d2c28573ce8009862d4a2e0fd0f359c2675bb
       discount: 'New',
       rating: 4.5,
       additionalInfo:
