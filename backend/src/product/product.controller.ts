@@ -28,7 +28,7 @@ export class ProductController {
   async findAll(): Promise<Product[]> {
     return this.productService.findAll();
   }
-
+  
   @Put(':id')
   async update(
     @Param('id', ParseIntPipe) id: number,
@@ -36,7 +36,15 @@ export class ProductController {
   ): Promise<Product> {
     return this.productService.update(id, updateProductDto);
   }
-
+  @Get(':id')
+  async findOne(@Param('id') id: string) {
+    console.log('Request for product ID:', id); // Debug log
+    const product = await this.productService.findOne(+id);
+    if (!product) {
+      throw new NotFoundException(`Product with ID ${id} not found`);
+    }
+    return product;
+  }
   @Delete(':id')
   async delete(@Param('id', ParseIntPipe) id: number): Promise<Product> {
     try {

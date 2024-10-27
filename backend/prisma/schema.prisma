@@ -25,6 +25,7 @@ model Product {
   image          String
   images         String[]
   discount       String?
+  is_new         Boolean  @default(false)
   rating         Float?
   reviewCount    Int?
   additionalInfo String
