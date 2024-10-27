@@ -1,28 +1,139 @@
 .pagination-buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2.5rem;
-    padding: 3rem 0;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 3rem 0;
 }
 
 .pagination-button {
-    width: 3.75rem;
-    height: 3.75rem;
-    font-size: 1.25rem;
-    padding: 10px;
-    border-radius: 10px;
-    border: none;
-    font-family: var(--font-family);
-    font-weight: var(--font-weight-400);
+  width: 3.75rem;
+  height: 3.75rem;
+  font-size: 1.25rem;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-400);
 }
 
 .pagination-button:hover {
-    background-color: #B88E2F;
-    color: #FFFFFF;
+  background-color: #b88e2f;
+  color: #ffffff;
 }
 
 .pagination-button-next {
-    width: 6.125rem;
+  width: 6.125rem;
 }
+/* Seção de Filtros */
+.filters {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    margin: 32px auto; /* Centraliza horizontalmente */
+    border-bottom: 1px solid #e8e8e8;
+    width: 80%; /* Ocupa 80% da largura */
+    max-width: 1240px;
+    gap: 20px; /* Espaço entre os elementos */
+  }
+  
+  .filters-left {
+    display: flex;
+    align-items: center;
+    gap: 16px; /* Espaço reduzido entre os elementos da esquerda */
+  }
+  
+  .filters button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #3a3a3a;
+    white-space: nowrap; /* Evita quebra de linha */
+  }
+  
+  .filters button img {
+    width: 20px; /* Tamanho reduzido */
+    height: 20px;
+  }
+  
+  .filters > img {
+    width: 20px; /* Tamanho reduzido */
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  .filters-center {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Espaço reduzido */
+  }
+  
+  .pagination-info {
+    color: #3a3a3a;
+    font-size: 14px; /* Tamanho reduzido */
+    white-space: nowrap;
+  }
+  
+  .controls {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Espaço reduzido */
+    margin-left: auto; /* Empurra para a direita */
+  }
+  
+  .controls label {
+    color: #3a3a3a;
+    font-size: 14px; /* Tamanho reduzido */
+    white-space: nowrap;
+  }
+  
+  .controls input {
+    padding: 6px 12px; /* Padding reduzido */
+    border: 1px solid #9f9f9f;
+    border-radius: 4px;
+    background: #ffffff;
+    color: #3a3a3a;
+  }
+  
+  .controls input[type="number"] {
+    width: 60px; /* Largura reduzida */
+  }
+  
+  .controls input[type="text"] {
+    width: 100px; /* Largura reduzida */
+  }
+  
+  .filters img[alt="Icon Bar"] {
+    height: 16px; /* Tamanho reduzido */
+    margin: 0 12px; /* Margem reduzida */
+  }
+  
+  /* Resto do seu CSS permanece igual */
+  
+  /* Responsividade atualizada */
+  @media (max-width: 1024px) {
+    .filters {
+      width: 90%;
+      gap: 15px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .filters {
+      width: 95%;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+  
+    .controls {
+      margin-left: 0;
+      justify-content: center;
+      width: 100%;
+    }
+  }

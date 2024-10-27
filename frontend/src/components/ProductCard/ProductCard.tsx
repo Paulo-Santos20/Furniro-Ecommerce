@@ -1,5 +1,4 @@
-// ProductCard.tsx
-import React from 'react';
+import { useNavigate } from "react-router-dom";
 
 interface ProductProps {
   product: {
@@ -7,8 +6,8 @@ interface ProductProps {
     name: string;
     description: string;
     price: string;
-    discount_price?: string;
-    discount_percent?: string;
+    originalPrice?: string;
+    discount?: string;
     image_link: string;
     image: string;
     is_new?: boolean;
@@ -16,22 +15,33 @@ interface ProductProps {
   onSeeDetails: (productId: number) => void;
 }
 
-const ProductCard: React.FC<ProductProps> = ({ product, onSeeDetails }) => {
+const ProductCard: React.FC<ProductProps> = ({ product }) => {
+  const navigate = useNavigate();
+
+  const getBadge = () => {
+    if (product.is_new) {
+      return <span className="new">New</span>;
+    }
+    if (product.discount) {
+      return <span className="discount_percent">{product.discount}</span>;
+    }
+    return null;
+  };
+  const handleSeeDetails = () => {
+    navigate(`/product/${product.id}`);
+  };
   return (
     <div className="product-card">
       <div className="product-image">
         <img src={product.image_link || product.image} alt={product.name} />
-        {product.discount_percent && (
-          <span className="discount_percent">-{product.discount_percent}%</span>
-        )}
-        {product.is_new && <span className="new">New</span>}
+        {getBadge()}
         <div className="hover-actions">
-          <button
-            className="button-details"
-            onClick={() => onSeeDetails(product.id)}
-          >
-            See Details
-          </button>
+        <button
+          className="button-details"
+          onClick={handleSeeDetails}
+        >
+          See Details
+        </button>
           <div className="actions">
             <div className="action">
               <img
@@ -63,23 +73,10 @@ const ProductCard: React.FC<ProductProps> = ({ product, onSeeDetails }) => {
       <h3 className="product-title">{product.name}</h3>
       <p className="product-sub-title">{product.description}</p>
       <div className="price-container">
-        <p className="price">
-          R$
-          <span className="price-value-discount">
-            {parseFloat(product.price).toLocaleString("pt-BR", { 
-              minimumFractionDigits: 2 
-            })}
-          </span>
-        </p>
-
-        {product.discount_price && (
+        <p className="price">Rp {parseFloat(product.price).toLocaleString()}</p>
+        {product.originalPrice && (
           <p className="original-price">
-            R$
-            <span className="price-value">
-              {parseFloat(product.discount_price).toLocaleString("pt-BR", { 
-                minimumFractionDigits: 2 
-              })}
-            </span>
+            Rp {parseFloat(product.originalPrice).toLocaleString()}
           </p>
         )}
       </div>
