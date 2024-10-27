@@ -26,6 +26,7 @@ async function main() {
         'https://img.freepik.com/fotos-gratis/investigador-privado-a-procurar-arquivos-com-base-em-nomes-de-casos-nos-arquivos_482257-83351.jpg?t=st=1729620396~exp=1729623996~hmac=c79910888b04b6cce688f8e76e39b56fd04a4aba33c6ddce7622438ce24f4628&w=1060',
       ],
       discount: '-30%',
+      is_new: false,
       rating: 4.5,
       reviewCount: 5,
       additionalInfo:
@@ -37,6 +38,7 @@ async function main() {
       description: 'Stylish cafe chair',
       price: 2500000,
       image: 'leviosaImage',
+      is_new: false,
       rating: 4.5,
       additionalInfo:
         'Color: Brown\nMaterial: Leather\nDimensions: 84" W x 39" D x 33" H\nWeight: 160 lbs',
@@ -49,6 +51,7 @@ async function main() {
       originalPrice: 14000000,
       image: 'lolitoImage',
       discount: '-50%',
+      is_new: false,
       rating: 4.5,
       additionalInfo:
         'Color: Brown\nMaterial: Leather\nDimensions: 84" W x 39" D x 33" H\nWeight: 160 lbs',
@@ -59,6 +62,7 @@ async function main() {
       description: 'Outdoor bar table and stool',
       price: 500000,
       image: 'respiraImage',
+      is_new: true,
       rating: 4.5,
       additionalInfo:
         'Color: Brown\nMaterial: Leather\nDimensions: 84" W x 39" D x 33" H\nWeight: 160 lbs',
@@ -69,6 +73,7 @@ async function main() {
       description: 'Night lamp',
       price: 1500000,
       image: 'grifoImage',
+      is_new: false,
       rating: 4.5,
       additionalInfo:
         'Color: Brown\nMaterial: Leather\nDimensions: 84" W x 39" D x 33" H\nWeight: 160 lbs',
@@ -78,6 +83,7 @@ async function main() {
       name: 'Muggo',
       description: 'Small mug',
       price: 150000,
+      is_new: true,
       image: 'muggoImage',
       discount: 'New',
       rating: 4.5,
@@ -92,6 +98,7 @@ async function main() {
       originalPrice: 14000000,
       image: 'pingkyImage',
       discount: '-50%',
+      is_new: false,
       rating: 4.5,
       additionalInfo:
         'Color: Brown\nMaterial: Leather\nDimensions: 84" W x 39" D x 33" H\nWeight: 160 lbs',
@@ -101,6 +108,7 @@ async function main() {
       name: 'Potty',
       description: 'Minimalist flower pot',
       price: 500000,
+      is_new: true,
       image: 'pottyImage',
       discount: 'New',
       rating: 4.5,

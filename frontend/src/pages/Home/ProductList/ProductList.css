@@ -68,38 +68,30 @@
   object-fit: cover;
   object-position: center;
 }
-.discount_percent {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  background-color: #e97171;
-  color: #fff;
-  padding: 6px 8px;
-  font-size: 1rem;
-  border-radius: 50%;
-  width: 48px;
-  height: 48px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
+.discount_percent,
 .new {
   position: absolute;
   top: 20px;
   right: 20px;
-  color: #ffffff;
-  background: #2ec1ac;
-  padding: 6px 8px;
-  font-size: 1rem;
-  border-radius: 50px;
   width: 48px;
   height: 48px;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 50%;
+  font-size: 16px;
+  font-weight: 500;
+}
+.discount_percent {
+  background-color: #e97171;
+  color: #ffffff;
 }
 
+.new {
+  background: #168a78;
+  color: #ffffff;
+}
 h3 {
   font-size: 24px;
   color: #3a3a3a;
