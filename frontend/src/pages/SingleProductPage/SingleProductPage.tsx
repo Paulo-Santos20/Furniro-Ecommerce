@@ -236,7 +236,7 @@ const SingleProductPage = () => {
               <div className="product-page__color">
                 <label className="product-page__label">Color</label>
                 <div className="product-page__color-buttons">
-                  {["#B88E2F", "#333333", "#444444"].map((color) => (
+                  {["#816DFA", "#000000", "#B88E2F"].map((color) => (
                     <button
                       key={color}
                       className={`product-page__color-button ${
@@ -249,27 +249,25 @@ const SingleProductPage = () => {
                 </div>
               </div>
 
-              <div className="product-page__quantity">
-                <label className="product-page__label">Quantity</label>
+              <div className="product-page__quantity-and-actions">
                 <div className="product-page__quantity-controls">
                   <button onClick={() => handleQuantityChange(false)}>-</button>
                   <span>{quantity}</span>
                   <button onClick={() => handleQuantityChange(true)}>+</button>
                 </div>
-              </div>
 
-              <div className="product-page__actions">
                 <button
                   className="product-page__add-to-cart"
                   onClick={handleAddToCart}
                 >
                   Add To Cart
                 </button>
-                <button className="product-page__action-button">
-                  <img src="/assets/icons/heart.svg" alt="Add to wishlist" />
-                </button>
-                <button className="product-page__action-button">
-                  <img src="/assets/icons/compare.svg" alt="Compare" />
+
+                <button
+                  className="product-page__compare"
+                  onClick={handleAddToCart}
+                >
+                 + Compare
                 </button>
               </div>
             </div>
