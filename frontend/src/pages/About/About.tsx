@@ -4,15 +4,7 @@ import "./About.css";
 
 const About = () => {
   return (
-    <section className="about-page">
-      <BannerItem
-        imgUrl="/assets/images/RectangleImage.png"
-        icon="/assets/icons/arrow.svg"
-        title="About"
-        linkHome="/"
-        linkShop="/about"
-        type="2"
-      />
+    <section className="about-page">     
 
       <div className="about-content">
         <div className="about-section">
@@ -31,7 +23,7 @@ const About = () => {
             </p>
           </div>
           <div className="about-image">
-            <img src="/assets/images/about-1.jpg" alt="About Furniro" />
+            <img src="../../../public/assets/icons/logo.svg" alt="About Furniro" />
           </div>
         </div>
 
@@ -54,7 +46,7 @@ const About = () => {
               <p>Enjoy free shipping on all orders within the United States</p>
             </div>
             <div className="feature-card">
-              <img src="/assets/icons/support.svg" alt="24/7 Support" />
+              <img src="../../../public/assets/icons/customer-support.svg" alt="24/7 Support" />
               <h3>24/7 Support</h3>
               <p>Our dedicated team is here to help you anytime you need</p>
             </div>

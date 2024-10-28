@@ -10,15 +10,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="contact-page">
-      <BannerItem
-        imgUrl="/assets/images/RectangleImage.png"
-        icon="/assets/icons/arrow.svg"
-        title="Contact"
-        linkHome="/"
-        linkShop="/contact"
-        type="2"
-      />
+    <section className="contact-page">   
 
       <div className="contact-content">
         <div className="contact-info">
@@ -29,14 +21,12 @@ const Contact = () => {
 
           <div className="contact-methods">
             <div className="contact-method">
-              <img src="/assets/icons/email.svg" alt="Email" />
               <h3>Chat to us</h3>
               <p>Our friendly team is here to help.</p>
               <a href="mailto:hi@furniro.com">hi@furniro.com</a>
             </div>
 
             <div className="contact-method">
-              <img src="/assets/icons/office.svg" alt="Office" />
               <h3>Office</h3>
               <p>Come say hello at our office HQ.</p>
               <address>
@@ -46,7 +36,6 @@ const Contact = () => {
             </div>
 
             <div className="contact-method">
-              <img src="/assets/icons/phone.svg" alt="Phone" />
               <h3>Phone</h3>
               <p>Mon-Fri from 8am to 5pm.</p>
               <a href="tel:+1-202-555-0123">+1 (202) 555-0123</a>
