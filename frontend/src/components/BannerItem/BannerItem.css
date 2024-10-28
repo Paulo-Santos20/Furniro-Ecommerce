@@ -1,74 +1,69 @@
 .banner {
-    position: relative;  
-  }
-  
-  .banner__content {
-    position: relative;
-  }
-  
-  .banner__background-image {
-    height: 499.48px;
-    width: 100%;
-  }
-  
-  .banner__rectangle {
-    position: absolute;
-    bottom: 1%;
-    left: 52%;
-    border-radius: 10px 10px 0 0;
-<<<<<<< HEAD
-    height: 50%;
-    width: 45%;
-=======
-    height: 292px;
-    width:40%;
->>>>>>> main
-  }
-  
-  .banner__overlay-text {
-    position: absolute;
-    top: 56%;
-    left: 72%;
-    transform: translate(-50%, -50%);
-    min-width: 546px;
-    color: #333333;
-    font-family: var(--font-family);
-    font-weight: var(--font-weight-500);
-    font-size: 18px;
-  }
-  
-  .banner__title {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    top: 50%;
-    left: 43%;
-    font-size: 3rem;
-    font-family: var(--font-family);
-    font-weight: var(--font-weight-500);
-  }
-  
-  .banner__link {
-    position: absolute;
-    font-size: 24px;
-    font-family: var(--font-family);
-  }
-  
-  .banner__link--home {
-    top: 70%;
-    left: 43%;
-    font-weight: var(--font-weight-500);
-  }
-  
-  .banner__icon {
-    position: absolute;
-    top: 71%;
-    left: 48.5%;
-    min-width: 14px;
-  }
-  
-  .banner__link--shop {
-    top: 70%;
-    left: 50%;
-    font-weight: var(--font-weight-300);
-  }
+  position: relative;
+}
+
+.banner__content {
+  position: relative;
+}
+
+.banner__background-image {
+  height: 499.48px;
+  width: 100%;
+}
+
+.banner__rectangle {
+  position: absolute;
+  bottom: 1%;
+  left: 52%;
+  border-radius: 10px 10px 0 0;
+  height: 50%;
+  width: 45%;
+}
+
+.banner__overlay-text {
+  position: absolute;
+  top: 56%;
+  left: 72%;
+  transform: translate(-50%, -50%);
+  min-width: 546px;
+  color: #333333;
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-500);
+  font-size: 18px;
+}
+
+.banner__title {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 43%;
+  font-size: 3rem;
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-500);
+}
+
+.banner__link {
+  position: absolute;
+  font-size: 24px;
+  font-family: var(--font-family);
+}
+
+.banner__link--home {
+  top: 70%;
+  left: 43%;
+  font-weight: var(--font-weight-500);
+}
+
+.banner__icon {
+  position: absolute;
+  top: 71%;
+  left: 48.5%;
+  min-width: 14px;
+}
+
+.banner__link--shop {
+  top: 70%;
+  left: 50%;
+  font-weight: var(--font-weight-300);
+}
