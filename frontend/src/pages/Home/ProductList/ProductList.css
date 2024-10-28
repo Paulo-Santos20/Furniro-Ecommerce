@@ -47,6 +47,7 @@
 .product-card .original-price s {
   display: flex;
   line-height: 2;
+  margin-left: 20px;
 }
 
 .product-image-container {
@@ -67,6 +68,7 @@
   height: 100%;
   object-fit: cover;
   object-position: center;
+
 }
 .new,
 .discount_percent {
@@ -84,19 +86,20 @@
   z-index: 2;
 }
 .new {
-  background: #2EC1AC;
-  color: #FFFFFF;
+  background: #2ec1ac;
+  color: #ffffff;
 }
 
 .discount_percent {
-  background: #E97171;
-  color: #FFFFFF;
+  background: #e97171;
+  color: #ffffff;
 }
 
 h3 {
   font-size: 24px;
   color: #3a3a3a;
   padding-top: 10px;
+
 }
 
 .price-container {
@@ -110,6 +113,8 @@ h3 {
   color: #3a3a3a;
   margin: 0;
   padding: 0;
+  margin-left: 16px;
+margin-top: 16px;
 }
 
 .product-sub-title {
